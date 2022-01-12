@@ -67,6 +67,10 @@ header > ul > li > a {
     font-weight: bold;
 }
 
+header > ul > li > a:visited {
+    color: var(--light);
+}
+
 header > ul > li > a::after {
     content: "";
     position: absolute;
@@ -180,6 +184,7 @@ footer p {
     color: var(--light);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 16.5px;
 }
 
 footer a:visited, a:link {
