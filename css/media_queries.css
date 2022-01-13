@@ -1,0 +1,39 @@
+@import url("./styles.css");
+
+@media only screen and (max-width: 810px) {
+    
+    footer > section {
+        grid-template-columns: 1fr 1fr;
+        margin: 1em auto 1em auto;
+        grid-gap: 1em 100px;
+    }
+
+    footer > p {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    
+    header > ul {
+        position: fixed;
+        top: 0; left: 0;
+        transform: translateY(0) scaleX(1);
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--dark-opacity-secondary);
+    }
+    
+    header > ul > li > a {
+        font-size: 30px;
+    }
+
+    #show-menu {
+        display: inline-block;
+    }
+
+}
