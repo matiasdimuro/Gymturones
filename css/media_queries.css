@@ -3,11 +3,11 @@
 @media only screen and (max-width: 810px) {
 
     main {
-        height: 65vh;
+        height: 90vh;
     }
 
     footer {
-        height: 25vh;
+        height: auto;
     }
     
     footer > section {
@@ -19,6 +19,11 @@
     footer > p {
         margin-bottom: 1em;
     }
+
+    #show_menu, #close_menu {
+        display: none;
+    }
+    
 }
 
 @media only screen and (max-width: 570px) {
@@ -26,7 +31,7 @@
     header > ul {
         position: fixed;
         top: 0; left: 0;
-        transform: translateY(0) scaleX(0);
+        transform: translateY(0) translateX(-100vw);
         width: 100%;
         height: 100vh;
         z-index: 100;
