@@ -24,6 +24,7 @@
 
 body {
     background-color: var(--dark);
+    overflow-x: hidden;
 }
 
 /* ============================================ */
@@ -61,6 +62,7 @@ header > ul {
     justify-content: space-between;
     background-color: inherit;
     list-style: none;
+    transform: scale();
 }
 
 header > ul > li > a {
@@ -102,6 +104,7 @@ header > i {
 }
 
 #close-menu, #show-menu {
+
     display: none;
     cursor: pointer;
 }
@@ -186,7 +189,7 @@ main > article > button:hover {
 
 footer {
     width: 100%;
-    height: auto;
+    min-height: 15vh;
     padding: 20px 8vw;
     display: flex;
     flex-direction: column;
@@ -225,4 +228,21 @@ footer > section > div {
 
 .footer_languajes {
     cursor: pointer;
+}
+
+/* ============================================ */
+/* BARRA DE SCROLL */
+/* ============================================ */
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: var(--dark);
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+    border-radius: 10px;
+    background-color: var(--dark);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--red);
 }

@@ -2,22 +2,19 @@ const show_button = document.getElementById('show-menu');
 const close_button = document.getElementById('close-menu');
 const menu = document.getElementById('menu');
 
-show_button.addEventListener('click', showMenu);
-close_button.addEventListener('click', closeMenu);
+show_button.addEventListener('click', (e) => {
 
-function showMenu() {
-        
-    menu.style.transform = "translateX(0)";
-    show_button.style.display = "none";
+    e.target.style.display = "none";
+    menu.classList.toggle('slide');
+
     close_button.style.zIndex = 150;
     close_button.style.display = "inline-block";
+});
 
-}
+close_button.addEventListener('click', (e) => {
 
-function closeMenu() {
+    e.target.style.display = "none";
+    menu.classList.toggle('slide');
 
-    menu.style.transform = "translateX(-100vw)";
-    close_button.style.display = "none";
     show_button.style.display = "inline-block";
-
-}
+});
